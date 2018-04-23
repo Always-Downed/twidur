@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twidur</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<style type="text/css">
+		#navbar {
+			background-color: black;
+		}
+
+		#cover-photo {
+			height: 400px;
+			background: url(http://pa1.narvii.com/6474/64db03f4f9fed142e39ddca8d9c622a88e9a0c1c_hq.gif);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		#left-sidebar {
+			background-color: gray;
+		}
+
+		#center-tweets {
+			background-color: lightgreen;
+			border: 2px solid black;
+
+		}
+
+		#right-sidebar {
+			background-color: #FFEEEE;
+			border: 2px solid black
+		}
+
+		#footer {
+			background-color: purple;
+		}
+
+		#profile-picture {
+			height: 220px;
+			border-radius: 50%;
+			border: 2px solid white;
+			margin-top: -75px;
+		}
+
+		.sideprofile {
+				height: 40px;
+				display: block;
+				margin: auto;
+				border-radius: 50%;
+				border: 2px solid black
+		}
+
+		.middlepic {
+
+			height:  50px;
+			display:block; 
+			margin: auto;
+			border-radius: 50%;
+		}
+
+		#clicker {
+			float: right;
+		}
+
+		.dropbtn {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: gray;
+}
+
+	</style>
+
+
+</head>
+<body>		
+	<div class="container-fluid">	
+		<div class="row">
+			<div id="navbar" class="col-12">
+				<button id="clicker">Sign Out</button>
+	<script type="text/javascript">
+		var clicker = document.querySelector('#clicker');
+		clicker.addEventListener('click', function() {
+			alert('You have been signed out.');
+		})
+	</script>
+		<div class="dropdown">
+  <button class="dropbtn">Profile Settings</button>
+  <div class="dropdown-content">
+    <a href="#">Change Profile Pic</a>
+    <a href="#">Update Status</a>
+    <a href="#">Advance Settings</a>
+  </div>
+</div>
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div id="cover-photo" class="col-12">
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="left-sidebar" class="col-3">
+				<img src="https://forum.thd.vg/attachments/turtlebutt-gif.59782/" id="profile-picture">
+				<h2>Unknown</h2>
+				<h5>@Unknown</h5>
+				<h5>Birth place: ???</h5>
+				<h5>DOB: ??/??/??</h5>
+				<h5>Interests:</h5>
+				<ul>
+					<li>???</li>
+					<li>???</li>
+					<li>???</li>
+				</ul>
+			</div>
+			<div id="center-tweets" class="col-7">
+				
+				<div class="row">
+					<div class="col-4">
+						<img src="https://media2.giphy.com/media/l0HlNRowezfsJcFSo/giphy.gif" class="middlepic">
+					</div>
+					<div class="col-8 tweet-text">
+						<p>NOT FBI @Not_FBI1 • 30 mins</p>
+						<p>Name:John Doe, Birthplace: Cheyenne, Wyoming, DOB:7/12/89, </p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<img src="https://forum.thd.vg/attachments/turtlebutt-gif.59782/"  class="middlepic">
+					</div>
+					<div class="col-8 tweet-text">
+						<p>Unknown @Unknown • 45 mins</p>
+						<p>@Not_FBI1 Try Me... #notscared</p>
+					</div>
+				</div>
+				<div class="row">
+						<div class="col-4">
+							<img src="https://media2.giphy.com/media/l0HlNRowezfsJcFSo/giphy.gif" class="middlepic">
+						</div>
+						<div class="col-8 tweet-text">
+							<p>NOT FBI @Not_FBI1 • 1h</p>
+							<p>@Unknown I bet I can get your personal information #notsafe</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="right-sidebar" class="col-2">
+					Recommended Users:
+					<ul>
+						<div>
+							<li><img src="https://media2.giphy.com/media/l0HlNRowezfsJcFSo/giphy.gif" class="sideprofile">NOT FBI
+							</li>
+						<div/>
+						<div>
+							<li><img src="https://steamusercontent-a.akamaihd.net/ugc/92727554333519876/6C07ABB436EEEC74E93D3214A0078DDAEB884998/" class="sideprofile">Person 2</li>
+						<div/>
+						<div>
+							<li> <img src="http://68.media.tumblr.com/2d5e738009034bca3b81b07474f2ba72/tumblr_ohwsskj2r21vala9ro1_540.gif" class="sideprofile">Person 3</li>
+						<div/>
+					</ul>
+				</div>
+		</div>
+
+		<div class="row">
+			<div id="footer" class="col-12">
+				footer
+			</div>
+		</div>
+	</div>
+		
+</body>
+</html>
